@@ -1,0 +1,10 @@
+Implement of modified variant of barber sleeping problem using semaphores
+and shared memory. Prevent to deadlock and starvation.
+
+Params:  
+./barbers Q genc genb N F
+Q - number of chairs in waiting room
+genc - interval of generate customers [ms]
+genb - interval of generate of time service [ms]
+N - number of customers
+F - output filename

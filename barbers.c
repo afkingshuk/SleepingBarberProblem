@@ -38,9 +38,7 @@
 #define SEM_NAME_HOLIC_POKRACUJ "/xvalek02_ready_vypisy"
 
 //TODO magicka cisla
-//TODO codestyle upravit
 //TODO dopsat README
-//TODO promenne prepsat do english
 
 typedef struct {
 //Params of application
@@ -68,26 +66,25 @@ sem_t *xvalek02_ready_vypisy;
 FILE *outputFile;
 SSharedData * sharedData;
 
-
 //Release all semaphores.
 void cleanSemaphores(sem_t *xvalek02_cekarna, sem_t *xvalek02_vypis, sem_t *xvalek02_holic_spi, sem_t *xvalek02_holicova_zidle, sem_t *xvalek02_holic_dostrihal, sem_t *xvalek02_ready_vypisy ) {
-		sem_close(xvalek02_cekarna);
-		sem_unlink(SEM_NAME_CEKARNA);
+	sem_close(xvalek02_cekarna);
+	sem_unlink(SEM_NAME_CEKARNA);
 
-		sem_close(xvalek02_vypis);
-		sem_unlink(SEM_NAME_VYPIS);
+	sem_close(xvalek02_vypis);
+	sem_unlink(SEM_NAME_VYPIS);
 
-		sem_close(xvalek02_holic_spi);
-		sem_unlink(SEM_NAME_HOLIC_SPI);
+	sem_close(xvalek02_holic_spi);
+	sem_unlink(SEM_NAME_HOLIC_SPI);
 
-		sem_close(xvalek02_holicova_zidle);
-		sem_unlink(SEM_NAME_HOLICOVA_ZIDLE);
+	sem_close(xvalek02_holicova_zidle);
+	sem_unlink(SEM_NAME_HOLICOVA_ZIDLE);
 
-		sem_close(xvalek02_holic_dostrihal);
-		sem_unlink(SEM_NAME_HOLIC_DOSTRIHAL);
+	sem_close(xvalek02_holic_dostrihal);
+	sem_unlink(SEM_NAME_HOLIC_DOSTRIHAL);
 
-		sem_close(xvalek02_ready_vypisy);
-		sem_unlink(SEM_NAME_HOLIC_POKRACUJ);
+	sem_close(xvalek02_ready_vypisy);
+	sem_unlink(SEM_NAME_HOLIC_POKRACUJ);
 }
 
 //Char's parameter to number parameter.
@@ -109,17 +106,17 @@ int convert(char *param) {
 
 //Verify parameters.
 int verifyParameters(int argc, char *argv[], P_param *p) {
-		if (argc != 6)
-			return 1;
+	if (argc != 6)
+		return 1;
 
-		p->numberOfChairs = convert(argv[1]);
-		p->genc = convert(argv[2]);
-		p->genb = convert(argv[3]);
-		p->numberOfCustomers = convert(argv[4]);
-		p->file = argv[5];
+	p->numberOfChairs = convert(argv[1]);
+	p->genc = convert(argv[2]);
+	p->genb = convert(argv[3]);
+	p->numberOfCustomers = convert(argv[4]);
+	p->file = argv[5];
 
-		if (p->numberOfChairs == UINT_MAX || p->genc == UINT_MAX || p->genb == UINT_MAX || p->numberOfCustomers == UINT_MAX || strlen(p->file) == UINT_MAX)
-			return 1;
+	if (p->numberOfChairs == UINT_MAX || p->genc == UINT_MAX || p->genb == UINT_MAX || p->numberOfCustomers == UINT_MAX || strlen(p->file) == UINT_MAX)
+		return 1;
 
 	return 0;
 }
