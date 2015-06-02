@@ -1,15 +1,27 @@
-# Projekt:	Synchronizace procesu
-# Autor:	Tomas Valek
+# Project:	Synchronization of proceses
+# Author:	Tomas Valek
 # Login:	xvalek02
-# Datum:	01.05.2011 
+# Date:		01.05.2011 
 # 
 
-# překladač jazyka C:
+NAME = barbers
+
+# compiler of C language:
 CC=gcc
-# parametry překladače:
+# params
 CFLAGS= -std=gnu99 -Wall -Wextra -pedantic -Werror
+CLIBS= -lpthread -lrt
 
-all: barbers
+all: $(NAME)
 
-barbers: barbers.c
-	$(CC) $(CFLAGS) -lrt -pthread -o $@ $<
+.PHONY: clean
+.PHONY: pack
+
+$(NAME): $(NAME).c
+	$(CC) $(CFLAGS) -o $@ $< $(CLIBS)
+
+clean:
+	rm -f *.o $(NAME) $(NAME).zip
+
+pack:
+	zip $(NAME).zip $(NAME).c Makefile README output

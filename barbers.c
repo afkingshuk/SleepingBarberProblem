@@ -1,24 +1,24 @@
 /*
- * Soubor:  barbers.c
- * Datum:   Duben.2011
- * Autor:   Tomas Valek, xvalek02@stud.fit.vutbr.cz
- * Projekt: IOS projekt c. 2 - Synchronizace procesu
- * Popis:   Implementuji upravenou variantu synchronizacniho problemu spiciho holice pomoci semaforu.
+ * File:  	barbers.c
+ * Date:   	04.2011
+ * Author:  Tomas Valek, xvalek02@stud.fit.vutbr.cz
+ * Project: IOS project number 2 - Synchronization of proceses
+ * Desc.:   Implement of modified variant of barber sleeping problem using semaphores.
  */
 #include <stdio.h>		//standard input/output library functions
-#include <stdlib.h>		//obecne funkce jazyka C
-#include <limits.h>		//kvuli UINT_MAX
+#include <stdlib.h>		//general funciton of language C
+#include <limits.h>		//UINT_MAX
 #include <errno.h>		//perror
-#include <sys/types.h>	//fork-vytvareni procesu
-#include <unistd.h>		//fork-vytvareni procesu
-#include <semaphore.h>	//semafor
+#include <sys/types.h>	//fork
+#include <unistd.h>		//fork
+#include <semaphore.h>	//semaphor
 #include <sys/wait.h>	//wait
-#include <fcntl.h>		//ovladani souboru
-#include <string.h>		//strlen-porovnavani retezcu
-#include <sys/shm.h>	//shmat-pripojit sdilenou pamet, shmget-prideluje segment sdilene pameti
-#include <sys/ipc.h>	//ftok-generovani IPC klice, shmget-prideluje segment sdilene pameti
+#include <fcntl.h>		//files
+#include <string.h>		//strlen
+#include <sys/shm.h>	//shmat-connect of share memory, shmget-allocate segment of shared memory
+#include <sys/ipc.h>	//ftok-generate IPC key, shmget-allocate segment of shared memory
 #include <time.h>		//srand
-#include <signal.h>
+#include <signal.h>		//signals
 
 
 //Definuji si jmena pro semafory:
@@ -31,11 +31,13 @@
 
 //TODO codestyle upravit
 //TODO dopsat README
+//TODO promenne prepsat do english
+//TODO upravit makefile
 
 typedef struct
 	{//struktura pro parametry programu
 		unsigned int pocet_zidli;			//pocet zidli v cekarne
-		unsigned int genc;					//interval generovani zakazniku	TODO jaky interval?
+		unsigned int genc;					//interval generovani zakazniku		TODO jaky interval?
 		unsigned int genb;					//interval obsluhy zakaznika
 		unsigned int pocet_zakazniku;		//pocet zakazniku, kteri maji prijit
 		char *soubor;						//soubor
