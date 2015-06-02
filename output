@@ -1,0 +1,701 @@
+1: barber: checks
+2: customer 1: created
+3: customer 1: enters
+4: barber: ready
+5: customer 1: ready
+6: customer 2: created
+7: customer 2: enters
+8: barber: finished
+9: barber: checks
+10: barber: ready
+11: customer 1: served
+12: customer 2: ready
+13: customer 3: created
+14: customer 3: enters
+15: barber: finished
+16: barber: checks
+17: barber: ready
+18: customer 2: served
+19: customer 3: ready
+20: barber: finished
+21: barber: checks
+22: customer 3: served
+23: customer 4: created
+24: customer 4: enters
+25: barber: ready
+26: customer 4: ready
+27: customer 5: created
+28: customer 5: enters
+29: barber: finished
+30: barber: checks
+31: barber: ready
+32: customer 4: served
+33: customer 5: ready
+34: customer 6: created
+35: barber: finished
+36: barber: checks
+37: customer 5: served
+38: customer 6: enters
+39: barber: ready
+40: customer 6: ready
+41: customer 7: created
+42: customer 7: enters
+43: barber: finished
+44: barber: checks
+45: barber: ready
+46: customer 6: served
+47: customer 7: ready
+48: customer 8: created
+49: customer 8: enters
+50: barber: finished
+51: barber: checks
+52: barber: ready
+53: customer 7: served
+54: customer 8: ready
+55: barber: finished
+56: barber: checks
+57: customer 8: served
+58: customer 9: created
+59: customer 9: enters
+60: barber: ready
+61: customer 9: ready
+62: barber: finished
+63: barber: checks
+64: customer 9: served
+65: customer 10: created
+66: customer 10: enters
+67: barber: ready
+68: customer 10: ready
+69: customer 11: created
+70: customer 11: enters
+71: customer 12: created
+72: customer 12: enters
+73: barber: finished
+74: barber: checks
+75: barber: ready
+76: customer 10: served
+77: customer 11: ready
+78: barber: finished
+79: barber: checks
+80: barber: ready
+81: customer 11: served
+82: customer 12: ready
+83: barber: finished
+84: barber: checks
+85: customer 12: served
+86: customer 13: created
+87: customer 13: enters
+88: barber: ready
+89: customer 13: ready
+90: customer 14: created
+91: customer 14: enters
+92: barber: finished
+93: barber: checks
+94: barber: ready
+95: customer 13: served
+96: customer 14: ready
+97: customer 15: created
+98: customer 15: enters
+99: barber: finished
+100: barber: checks
+101: barber: ready
+102: customer 14: served
+103: customer 15: ready
+104: customer 16: created
+105: customer 16: enters
+106: barber: finished
+107: barber: checks
+108: barber: ready
+109: customer 15: served
+110: customer 16: ready
+111: customer 17: created
+112: customer 17: enters
+113: customer 18: created
+114: customer 18: enters
+115: barber: finished
+116: barber: checks
+117: barber: ready
+118: customer 16: served
+119: customer 17: ready
+120: customer 19: created
+121: customer 19: enters
+122: barber: finished
+123: barber: checks
+124: barber: ready
+125: customer 18: ready
+126: customer 17: served
+127: customer 20: created
+128: customer 20: enters
+129: barber: finished
+130: barber: checks
+131: barber: ready
+132: customer 18: served
+133: customer 19: ready
+134: customer 21: created
+135: customer 21: enters
+136: barber: finished
+137: barber: checks
+138: customer 19: served
+139: barber: ready
+140: customer 20: ready
+141: customer 22: created
+142: customer 22: enters
+143: barber: finished
+144: barber: checks
+145: customer 20: served
+146: barber: ready
+147: customer 21: ready
+148: customer 23: created
+149: customer 23: enters
+150: barber: finished
+151: barber: checks
+152: barber: ready
+153: customer 21: served
+154: customer 22: ready
+155: customer 24: created
+156: customer 24: enters
+157: barber: finished
+158: barber: checks
+159: barber: ready
+160: customer 22: served
+161: customer 23: ready
+162: barber: finished
+163: barber: checks
+164: barber: ready
+165: customer 23: served
+166: customer 24: ready
+167: customer 25: created
+168: customer 25: enters
+169: barber: finished
+170: barber: checks
+171: customer 24: served
+172: barber: ready
+173: customer 25: ready
+174: customer 26: created
+175: customer 26: enters
+176: customer 27: created
+177: barber: finished
+178: customer 27: enters
+179: barber: checks
+180: barber: ready
+181: customer 25: served
+182: customer 26: ready
+183: barber: finished
+184: barber: checks
+185: barber: ready
+186: customer 26: served
+187: customer 27: ready
+188: customer 28: created
+189: barber: finished
+190: customer 28: enters
+191: barber: checks
+192: barber: ready
+193: customer 27: served
+194: customer 28: ready
+195: customer 29: created
+196: customer 29: enters
+197: barber: finished
+198: barber: checks
+199: barber: ready
+200: customer 29: ready
+201: customer 28: served
+202: customer 30: created
+203: customer 30: enters
+204: barber: finished
+205: barber: checks
+206: customer 29: served
+207: barber: ready
+208: customer 30: ready
+209: customer 31: created
+210: customer 31: enters
+211: barber: finished
+212: barber: checks
+213: barber: ready
+214: customer 31: ready
+215: customer 30: served
+216: customer 32: created
+217: customer 32: enters
+218: barber: finished
+219: barber: checks
+220: customer 31: served
+221: barber: ready
+222: customer 32: ready
+223: customer 33: created
+224: customer 33: enters
+225: barber: finished
+226: barber: checks
+227: barber: ready
+228: customer 32: served
+229: customer 33: ready
+230: customer 34: created
+231: customer 34: enters
+232: barber: finished
+233: barber: checks
+234: barber: ready
+235: customer 33: served
+236: customer 34: ready
+237: customer 35: created
+238: customer 35: enters
+239: customer 36: created
+240: customer 36: enters
+241: customer 37: created
+242: customer 37: enters
+243: barber: finished
+244: barber: checks
+245: barber: ready
+246: customer 34: served
+247: customer 35: ready
+248: barber: finished
+249: barber: checks
+250: barber: ready
+251: customer 35: served
+252: customer 36: ready
+253: customer 38: created
+254: customer 38: enters
+255: barber: finished
+256: barber: checks
+257: barber: ready
+258: customer 36: served
+259: customer 37: ready
+260: barber: finished
+261: barber: checks
+262: barber: ready
+263: customer 37: served
+264: customer 38: ready
+265: customer 39: created
+266: customer 39: enters
+267: customer 40: created
+268: customer 40: enters
+269: barber: finished
+270: barber: checks
+271: barber: ready
+272: customer 38: served
+273: customer 39: ready
+274: customer 41: created
+275: customer 41: enters
+276: barber: finished
+277: barber: checks
+278: barber: ready
+279: customer 39: served
+280: customer 40: ready
+281: barber: finished
+282: barber: checks
+283: barber: ready
+284: customer 41: ready
+285: customer 40: served
+286: barber: finished
+287: barber: checks
+288: customer 41: served
+289: customer 42: created
+290: customer 42: enters
+291: barber: ready
+292: customer 42: ready
+293: customer 43: created
+294: customer 43: enters
+295: customer 44: created
+296: customer 44: enters
+297: barber: finished
+298: barber: checks
+299: barber: ready
+300: customer 42: served
+301: customer 43: ready
+302: barber: finished
+303: barber: checks
+304: barber: ready
+305: customer 43: served
+306: customer 44: ready
+307: customer 45: created
+308: customer 45: enters
+309: barber: finished
+310: barber: checks
+311: barber: ready
+312: customer 44: served
+313: customer 45: ready
+314: barber: finished
+315: barber: checks
+316: customer 45: served
+317: customer 46: created
+318: customer 46: enters
+319: barber: ready
+320: customer 46: ready
+321: customer 47: created
+322: customer 47: enters
+323: customer 48: created
+324: customer 48: enters
+325: customer 49: created
+326: customer 49: enters
+327: barber: finished
+328: barber: checks
+329: barber: ready
+330: customer 46: served
+331: customer 47: ready
+332: barber: finished
+333: barber: checks
+334: barber: ready
+335: customer 47: served
+336: customer 48: ready
+337: customer 50: created
+338: customer 50: enters
+339: barber: finished
+340: barber: checks
+341: barber: ready
+342: customer 48: served
+343: customer 49: ready
+344: barber: finished
+345: barber: checks
+346: barber: ready
+347: customer 49: served
+348: customer 50: ready
+349: customer 51: created
+350: customer 51: enters
+351: barber: finished
+352: barber: checks
+353: barber: ready
+354: customer 50: served
+355: customer 51: ready
+356: customer 52: created
+357: customer 52: enters
+358: barber: finished
+359: barber: checks
+360: customer 51: served
+361: barber: ready
+362: customer 52: ready
+363: barber: finished
+364: barber: checks
+365: customer 52: served
+366: customer 53: created
+367: customer 53: enters
+368: barber: ready
+369: customer 53: ready
+370: customer 54: created
+371: customer 54: enters
+372: customer 55: created
+373: customer 55: enters
+374: barber: finished
+375: barber: checks
+376: barber: ready
+377: customer 53: served
+378: customer 54: ready
+379: barber: finished
+380: barber: checks
+381: barber: ready
+382: customer 54: served
+383: customer 55: ready
+384: customer 56: created
+385: customer 56: enters
+386: barber: finished
+387: barber: checks
+388: barber: ready
+389: customer 55: served
+390: customer 56: ready
+391: customer 57: created
+392: customer 57: enters
+393: barber: finished
+394: barber: checks
+395: barber: ready
+396: customer 56: served
+397: customer 57: ready
+398: customer 58: created
+399: customer 58: enters
+400: barber: finished
+401: barber: checks
+402: barber: ready
+403: customer 57: served
+404: customer 58: ready
+405: customer 59: created
+406: customer 59: enters
+407: barber: finished
+408: barber: checks
+409: barber: ready
+410: customer 58: served
+411: customer 59: ready
+412: customer 60: created
+413: customer 60: enters
+414: customer 61: created
+415: customer 61: enters
+416: customer 62: created
+417: customer 62: enters
+418: barber: finished
+419: barber: checks
+420: barber: ready
+421: customer 59: served
+422: customer 60: ready
+423: barber: finished
+424: barber: checks
+425: barber: ready
+426: customer 60: served
+427: customer 61: ready
+428: barber: finished
+429: barber: checks
+430: barber: ready
+431: customer 61: served
+432: customer 62: ready
+433: barber: finished
+434: barber: checks
+435: customer 62: served
+436: customer 63: created
+437: customer 63: enters
+438: barber: ready
+439: customer 63: ready
+440: customer 64: created
+441: customer 64: enters
+442: customer 65: created
+443: customer 65: enters
+444: customer 66: created
+445: customer 66: enters
+446: barber: finished
+447: barber: checks
+448: barber: ready
+449: customer 64: ready
+450: customer 63: served
+451: customer 67: created
+452: customer 67: enters
+453: barber: finished
+454: barber: checks
+455: barber: ready
+456: customer 64: served
+457: customer 65: ready
+458: barber: finished
+459: barber: checks
+460: barber: ready
+461: customer 65: served
+462: customer 66: ready
+463: barber: finished
+464: barber: checks
+465: barber: ready
+466: customer 66: served
+467: customer 67: ready
+468: customer 68: created
+469: customer 68: enters
+470: barber: finished
+471: barber: checks
+472: barber: ready
+473: customer 67: served
+474: customer 68: ready
+475: customer 69: created
+476: customer 69: enters
+477: barber: finished
+478: barber: checks
+479: barber: ready
+480: customer 68: served
+481: customer 69: ready
+482: barber: finished
+483: barber: checks
+484: customer 69: served
+485: customer 70: created
+486: customer 70: enters
+487: barber: ready
+488: customer 70: ready
+489: customer 71: created
+490: customer 71: enters
+491: customer 72: created
+492: customer 72: enters
+493: barber: finished
+494: barber: checks
+495: barber: ready
+496: customer 70: served
+497: customer 71: ready
+498: barber: finished
+499: barber: checks
+500: barber: ready
+501: customer 71: served
+502: customer 72: ready
+503: customer 73: created
+504: customer 73: enters
+505: barber: finished
+506: barber: checks
+507: barber: ready
+508: customer 72: served
+509: customer 73: ready
+510: barber: finished
+511: barber: checks
+512: customer 73: served
+513: customer 74: created
+514: customer 74: enters
+515: barber: ready
+516: customer 74: ready
+517: customer 75: created
+518: customer 75: enters
+519: barber: finished
+520: barber: checks
+521: barber: ready
+522: customer 74: served
+523: customer 75: ready
+524: customer 76: created
+525: customer 76: enters
+526: customer 77: created
+527: customer 77: enters
+528: customer 78: created
+529: customer 78: enters
+530: barber: finished
+531: barber: checks
+532: barber: ready
+533: customer 75: served
+534: customer 76: ready
+535: customer 79: created
+536: customer 79: enters
+537: barber: finished
+538: barber: checks
+539: barber: ready
+540: customer 76: served
+541: customer 77: ready
+542: barber: finished
+543: barber: checks
+544: barber: ready
+545: customer 77: served
+546: customer 78: ready
+547: barber: finished
+548: barber: checks
+549: barber: ready
+550: customer 78: served
+551: customer 79: ready
+552: customer 80: created
+553: customer 80: enters
+554: barber: finished
+555: barber: checks
+556: barber: ready
+557: customer 79: served
+558: customer 80: ready
+559: customer 81: created
+560: customer 81: enters
+561: barber: finished
+562: barber: checks
+563: barber: ready
+564: customer 80: served
+565: customer 82: created
+566: customer 81: ready
+567: customer 82: enters
+568: customer 83: created
+569: customer 83: enters
+570: barber: finished
+571: barber: checks
+572: barber: ready
+573: customer 81: served
+574: customer 82: ready
+575: barber: finished
+576: barber: checks
+577: customer 82: served
+578: barber: ready
+579: customer 83: ready
+580: customer 84: created
+581: customer 84: enters
+582: barber: finished
+583: barber: checks
+584: barber: ready
+585: customer 84: ready
+586: customer 83: served
+587: customer 85: created
+588: customer 85: enters
+589: barber: finished
+590: barber: checks
+591: barber: ready
+592: customer 84: served
+593: customer 85: ready
+594: customer 86: created
+595: customer 86: enters
+596: barber: finished
+597: barber: checks
+598: customer 85: served
+599: barber: ready
+600: customer 86: ready
+601: customer 87: created
+602: customer 87: enters
+603: customer 88: created
+604: customer 88: enters
+605: customer 89: created
+606: customer 89: enters
+607: barber: finished
+608: barber: checks
+609: barber: ready
+610: customer 86: served
+611: customer 87: ready
+612: customer 90: created
+613: customer 90: enters
+614: barber: finished
+615: barber: checks
+616: barber: ready
+617: customer 87: served
+618: customer 88: ready
+619: barber: finished
+620: barber: checks
+621: barber: ready
+622: customer 88: served
+623: customer 89: ready
+624: customer 91: created
+625: customer 91: enters
+626: barber: finished
+627: barber: checks
+628: barber: ready
+629: customer 89: served
+630: customer 90: ready
+631: customer 92: created
+632: customer 92: enters
+633: barber: finished
+634: barber: checks
+635: barber: ready
+636: customer 90: served
+637: customer 91: ready
+638: barber: finished
+639: barber: checks
+640: barber: ready
+641: customer 91: served
+642: customer 92: ready
+643: barber: finished
+644: barber: checks
+645: customer 92: served
+646: customer 93: created
+647: customer 93: enters
+648: barber: ready
+649: customer 93: ready
+650: customer 94: created
+651: customer 94: enters
+652: customer 95: created
+653: customer 95: enters
+654: barber: finished
+655: barber: checks
+656: barber: ready
+657: customer 93: served
+658: customer 94: ready
+659: customer 96: created
+660: customer 96: enters
+661: barber: finished
+662: barber: checks
+663: barber: ready
+664: customer 94: served
+665: customer 95: ready
+666: customer 97: created
+667: customer 97: enters
+668: customer 98: created
+669: customer 98: enters
+670: barber: finished
+671: barber: checks
+672: barber: ready
+673: customer 95: served
+674: customer 96: ready
+675: barber: finished
+676: barber: checks
+677: barber: ready
+678: customer 96: served
+679: customer 97: ready
+680: barber: finished
+681: barber: checks
+682: barber: ready
+683: customer 97: served
+684: customer 98: ready
+685: customer 99: created
+686: customer 99: enters
+687: barber: finished
+688: barber: checks
+689: barber: ready
+690: customer 98: served
+691: customer 99: ready
+692: customer 100: created
+693: customer 100: enters
+694: barber: finished
+695: barber: checks
+696: barber: ready
+697: customer 99: served
+698: customer 100: ready
+699: barber: finished
+700: barber: checks
+701: customer 100: served
