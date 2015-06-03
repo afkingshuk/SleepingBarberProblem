@@ -42,18 +42,18 @@
 
 typedef struct {
 //Params of application
-		unsigned int numberOfChairs;		//number of chairs in waiting room
-		unsigned int genc;					//interval of generate customers [ms]
-		unsigned int genb;					//interval of generate of time service [ms]
-		unsigned int numberOfCustomers;		//number of customers
-		char *file;							//output file
+	unsigned int numberOfChairs;		//number of chairs in waiting room
+	unsigned int genc;					//interval of generate customers [ms]
+	unsigned int genb;					//interval of generate of time service [ms]
+	unsigned int numberOfCustomers;		//number of customers
+	char *file;							//output file
 } P_param;
 
 typedef struct {
 //shared struct
-		unsigned int currentCustomer;		//current processed customer
-		unsigned int orderOfOperations;		//order of operation
-		unsigned int numberOfFreeChairs;	//number of free chairs for new customers
+	unsigned int currentCustomer;		//current processed customer
+	unsigned int orderOfOperations;		//order of operation
+	unsigned int numberOfFreeChairs;	//number of free chairs for new customers
 } SSharedData;
 
 //global variables:
