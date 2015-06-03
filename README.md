@@ -15,11 +15,11 @@ Requirement:
 
 Using:
 -------------
-./barber Q genc genb N F
-Q - number of chairs in waiting room
-genc - interval of generate customers [ms]
-genb - interval of generate of time service [ms]
-N - number of customers
+./barber Q genc genb N F    
+Q - number of chairs in waiting room    
+genc - interval of generate customers [ms]    
+genb - interval of generate of time service [ms]    
+N - number of customers    
 F - output filename
 
 Using valgrind:
