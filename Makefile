@@ -24,4 +24,4 @@ clean:
 	rm -f *.o $(NAME) $(NAME).zip
 
 pack:
-	zip $(NAME).zip $(NAME).c Makefile README output
+	zip $(NAME).zip $(NAME).c Makefile README LICENSE output
