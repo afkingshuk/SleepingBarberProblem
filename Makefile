@@ -1,10 +1,10 @@
-# Project:	Synchronization of proceses
+# Project:	Synchronization of processes.
 # Author:	Tomas Valek
 # Login:	xvalek02
 # Date:		01.05.2011 
 # 
 
-NAME = barbers
+NAME = barber
 
 # compiler of C language:
 CC=gcc

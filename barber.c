@@ -1,9 +1,9 @@
 /*
- * File:  	barbers.c
+ * File:  	barber.c
  * Date:   	04.2011
  * Author:  Tomas Valek, xvalek02@stud.fit.vutbr.cz
- * Project: IOS project number 2 - Synchronization of proceses
- * Desc.:   Implement of modified variant of barber sleeping problem using semaphores
+ * Project: IOS project number 2 - Synchronization of processes.
+ * Desc.:   Implement of modified variant of sleeping barber problem using semaphores
  *			and shared memory. Prevent to deadlock and starvation.
  * Params:  
  *	./barbers Q genc genb N F
@@ -30,15 +30,15 @@
 #include <signal.h>		//signals
 
 //Definition name of semaphores:
-#define SEM_NAME_CEKARNA "/xvalek02_cekarna"
-#define SEM_NAME_VYPIS "/xvalek02_vypis"
-#define SEM_NAME_HOLIC_SPI "/xvalek02_holic_spi"
-#define SEM_NAME_HOLICOVA_ZIDLE "/xvalek02_holicova_zidle"
-#define SEM_NAME_HOLIC_DOSTRIHAL "/xvalek02_holic_dostrihal"
-#define SEM_NAME_HOLIC_POKRACUJ "/xvalek02_ready_vypisy"
+#define SEM_NAME_CEKARNA 			"/xvalek02_cekarna"
+#define SEM_NAME_VYPIS 				"/xvalek02_vypis"
+#define SEM_NAME_HOLIC_SPI 			"/xvalek02_holic_spi"
+#define SEM_NAME_HOLICOVA_ZIDLE 	"/xvalek02_holicova_zidle"
+#define SEM_NAME_HOLIC_DOSTRIHAL 	"/xvalek02_holic_dostrihal"
+#define SEM_NAME_HOLIC_POKRACUJ 	"/xvalek02_ready_vypisy"
 
-//TODO magicka cisla
-//TODO dopsat README
+#define NUMBER_OF_PARAMS 6
+#define SECOND 1000					//1second == 1000ms
 
 typedef struct {
 //Params of application
@@ -106,7 +106,7 @@ int convert(char *param) {
 
 //Verify parameters.
 int verifyParameters(int argc, char *argv[], P_param *p) {
-	if (argc != 6)
+	if (argc != NUMBER_OF_PARAMS)
 		return 1;
 
 	p->numberOfChairs = convert(argv[1]);
@@ -172,9 +172,6 @@ int main(int argc, char *argv[]){
 		return 1;
 	}
 
-	unsigned int i = 1; 	//used in cycle for create of number of customer
-	int sharedMemory;
-
 	//output file:
 	if (strcmp(p.file,"-") == 0)
 		outputFile = stdout;
@@ -202,7 +199,7 @@ int main(int argc, char *argv[]){
 	}
 
 	//init of shared memory:
-	sharedMemory = shmget(IPCkey, sizeof(SSharedData), IPC_CREAT | 0600);
+	int sharedMemory = shmget(IPCkey, sizeof(SSharedData), IPC_CREAT | 0600);
 	if ( sharedMemory == -1 ) {//error
 		if ( sharedMemory == -1 )
 			shmctl(sharedMemory,IPC_RMID, NULL);
@@ -263,7 +260,7 @@ int main(int argc, char *argv[]){
 
 			sem_post(xvalek02_holicova_zidle);	//customer can sit to barber's chair
 
-			usleep(rand() % ((p.genb*1000)+1)); //barber is cutting customer
+			usleep(rand() % ((p.genb*SECOND)+1)); //barber is cutting customer
 
 			sem_wait(xvalek02_vypis);
 			fprintf(outputFile, "%u: barber: finished\n", sharedData->orderOfOperations++);//waiting for barber checks waiting room
@@ -276,8 +273,10 @@ int main(int argc, char *argv[]){
 		return 0;
 	}
 
+	unsigned int i = 1; 	//used in cycle for create of number of customer
+
 	for ( i = 1 ; i <= p.numberOfCustomers ; i++ ) { //creating of customers
-		usleep(rand() % ((p.genc*1000)+1)); //customer's creating time
+		usleep(rand() % ((p.genc*SECOND)+1)); 		//customer's creating time
 		pid_t customer = fork();
 		
 		//customer creating fail

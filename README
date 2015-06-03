@@ -1,8 +1,10 @@
-Implement of modified variant of barber sleeping problem using semaphores
+Implement of modified variant of sleeping barber problem using semaphores
 and shared memory. Prevent to deadlock and starvation.
 
+http://en.wikipedia.org/wiki/Sleeping_barber_problem
+
 Params:  
-./barbers Q genc genb N F
+./barber Q genc genb N F
 Q - number of chairs in waiting room
 genc - interval of generate customers [ms]
 genb - interval of generate of time service [ms]
